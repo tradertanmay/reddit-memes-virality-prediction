@@ -23,3 +23,4 @@ To replicate the results, please follow the steps below:
 - **API Credentials**: For obtaining Reddit API credentials, visit [Reddit's Developer Page](https://www.reddit.com/prefs/apps) and follow the instructions to create an app.
 
 
+2.
