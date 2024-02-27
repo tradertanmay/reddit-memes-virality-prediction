@@ -254,12 +254,8 @@ def process_dataframe(df, image_folder):
 
 
 
-
-# Function to classify sentiment
 def classify_sentiment(text):
     # Split the text into chunks of 512 tokens
-    sentiment_analyzer = pipeline('sentiment-analysis')
-
     chunks = [text[i:i+512] for i in range(0, len(text), 512)]
     
     # Classify sentiment for each chunk
@@ -268,14 +264,20 @@ def classify_sentiment(text):
     # Get the overall sentiment based on the majority vote
     labels = [result[0]['label'] for result in results if result]  # Exclude empty results
     if labels:
-        majority_vote = max(set(labels), key=labels.count)
-        return majority_vote
+        positive_count = labels.count('POSITIVE')
+        negative_count = labels.count('NEGATIVE')
+        neutral_count = labels.count('NEUTRAL')
+        
+        # Determine the majority sentiment
+        if positive_count > negative_count and positive_count > neutral_count:
+            return 'POSITIVE'
+        elif negative_count > positive_count and negative_count > neutral_count:
+            return 'NEGATIVE'
+        else:
+            return 'NEUTRAL'
     else:
-        return 'Unknown'  # Handle the case when sentiment cannot be determined
-
-
-
-
+        return 'Unknown'
+ 
 
 # Function to determine object count
 def determine_object_count(objects):
