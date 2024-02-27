@@ -24,11 +24,13 @@ To replicate the results, please follow the steps below:
 
 
 2. **Dataset Preparation and Analysis**:
+   
     a) **Extended Memes Dataset for Replication**: To facilitate the replication of this study beyond the two-week limit imposed by Reddit, all memes used in this study have been uploaded to an external platform. This ensures that future researchers can download these memes for their analyses. I have uploaded all the downloaded memes to this website for replication.
    
     b) **Metadata Storage**: The metadata associated with these memes is stored in this repository as `memes_metadata.csv`. This file can be used for initial analysis and understanding the dataset context.
    
     c) **Feature Addition to Metadata**: To add features to the memes' metadata, execute the cells in the `metadata_with_features.ipynb` notebook sequentially. The enhanced metadata will be saved in a file named `metadata_with_features.csv`, consisting of the original metadata with additional features included.
+   d) Ensure that memes_text_image.py are located in the same folder as the  `metadata_with_features.ipynb`file.
 
 By following these steps, researchers can replicate the study and extend the analysis with the provided dataset.
 
