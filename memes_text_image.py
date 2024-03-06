@@ -446,6 +446,9 @@ def classify_category(text):
 def normalize_upvotes(group):
     min_upvotes = group['Upvotes'].min()
     max_upvotes = group['Upvotes'].max()
-    group['Normalized_Upvotes'] = (group['Upvotes'] - min_upvotes) / (max_upvotes - min_upvotes)
+    if max_upvotes != min_upvotes:
+        group['Normalized_Upvotes'] = (group['Upvotes'] - min_upvotes) / (max_upvotes - min_upvotes)
+    else:
+        group['Normalized_Upvotes'] = 0  # Handle case where all upvotes are the same
     return group
 
