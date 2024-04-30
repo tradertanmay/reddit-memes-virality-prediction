@@ -45,3 +45,5 @@ To replicate the study, researchers have several options:
 - **Dependencies**: Make sure to install all necessary Python packages by running `pip install -r requirements.txt`.
 
 - **API Credentials**: For obtaining Reddit API credentials, visit [Reddit's Developer Page](https://www.reddit.com/prefs/apps) and follow the instructions to create an app.
+- The DeLong test, which is used to assess the significance of differences in AUC-ROC between two models, is not available in Python libraries. Therefore, we used R to perform the DeLong test. The corresponding R code has been uploaded to this repository to enable other researchers to replicate the significance testing of AUC-ROC scores between models.
+
