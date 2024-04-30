@@ -16,11 +16,7 @@ To replicate the results, please follow the steps below:
 
     d) The downloaded memes are stored in the specified directory (replace [xxxx] with the actual path), and the metadata is saved in a file named memes_metadata.csv within this repository.
 
-## Additional Notes
 
-- **Dependencies**: Make sure to install all necessary Python packages by running `pip install -r requirements1.txt`.
-
-- **API Credentials**: For obtaining Reddit API credentials, visit [Reddit's Developer Page](https://www.reddit.com/prefs/apps) and follow the instructions to create an app.
 
 
 2. **Dataset Preparation**:
@@ -48,3 +44,8 @@ To replicate the study, researchers have several options:
 - Begin after memes extraction using `metadata_with_features.ipynb`.
 - Start after preprocessing using `comprehensive_reddit_results_analysis.ipynb`.
 
+## Additional Notes
+
+- **Dependencies**: Make sure to install all necessary Python packages by running `pip install -r requirements1.txt`.
+
+- **API Credentials**: For obtaining Reddit API credentials, visit [Reddit's Developer Page](https://www.reddit.com/prefs/apps) and follow the instructions to create an app.
