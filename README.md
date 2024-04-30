@@ -25,7 +25,7 @@ To replicate the results, please follow the steps below:
 
 2. **Dataset Preparation and Analysis**:
    
-    a) **Extended Memes Dataset for Replication**: To facilitate the replication of this study beyond the two-week limit imposed by Reddit, all memes used in this study have been uploaded to an external platform. This ensures that future researchers can download these memes for their analyses. I have uploaded all the downloaded memes to this website for replication.
+    a) **Extended Memes Dataset for Replication**: To facilitate the replication of this study beyond the two-week limit imposed by Reddit, all memes used in this study have been uploaded on OSF https://doi.org/10.17605/OSF.IO/PV9MY. This ensures that future researchers can download these memes for their analyses. I have uploaded all the downloaded memes to this website for replication.
    
     b) **Metadata Storage**: The metadata associated with these memes is stored in this repository as `memes_metadata.csv`. This file can be used for initial analysis and understanding the dataset context.
    
