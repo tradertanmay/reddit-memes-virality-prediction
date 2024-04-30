@@ -1,4 +1,4 @@
-# reddit-memes-virality-prediction
+# Reddit-memes-virality-prediction
 
 ## Replicating Results
 
