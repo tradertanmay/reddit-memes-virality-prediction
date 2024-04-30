@@ -40,4 +40,11 @@ To replicate the results, please follow the steps below:
    
 
 By following these steps, researchers can replicate the study and extend the analysis with the provided dataset.
+### Study Replication
+
+To replicate the study, researchers have several options:
+
+- Start from scratch using `memes_download.ipynb`.
+- Begin after memes extraction using `metadata_with_features.ipynb`.
+- Start after preprocessing using `comprehensive_reddit_results_analysis.ipynb`.
 
