@@ -6,7 +6,7 @@
 
 To replicate the results, please follow the steps below:
 
-1. **Sequential Execution**: Execute the cells in the `memes_download.ipynb` notebook sequentially. Keep the following points in mind:
+1. **Dataset Extraction**: Execute the cells in the `memes_download.ipynb` notebook sequentially. Keep the following points in mind:
 
     a) Ensure that `config.py` , `memes_scrapper.py` and `preprocessing.py`are located in the same folder as the `memes_download.ipynb` file.
 
@@ -23,7 +23,7 @@ To replicate the results, please follow the steps below:
 - **API Credentials**: For obtaining Reddit API credentials, visit [Reddit's Developer Page](https://www.reddit.com/prefs/apps) and follow the instructions to create an app.
 
 
-2. **Dataset Preparation and Analysis**:
+2. **Dataset Preparation**:
    
     a) **Extended Memes Dataset for Replication**: To facilitate the replication of this study beyond the two-week limit imposed by Reddit, all memes used in this study have been uploaded on OSF https://doi.org/10.17605/OSF.IO/PV9MY. This ensures that future researchers can download these memes for their analyses. I have uploaded all the downloaded memes to this website for replication.
    
@@ -31,6 +31,13 @@ To replicate the results, please follow the steps below:
    
     c) **Feature Addition to Metadata**: To add features to the memes' metadata, execute the cells in the `metadata_with_features.ipynb` notebook sequentially. The enhanced metadata will be saved in a file named `metadata_with_features.csv`, consisting of the original metadata with additional features included.
    d) Ensure that memes_text_image.py are located in the same folder as the  `metadata_with_features.ipynb`file.
+3. **Memes Analysis**:
+   
+- The final CSV file after preprocessing and feature engineering is `Complete_viral_dataset.csv`.
+- To conduct meme analysis, please utilize the `comprehensive_reddit_results_analysis.ipynb` notebook.
+- The resulting dataset after analysis is saved as `viral_analyze.csv`.
+
+   
 
 By following these steps, researchers can replicate the study and extend the analysis with the provided dataset.
 
