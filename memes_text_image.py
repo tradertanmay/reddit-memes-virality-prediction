@@ -3,19 +3,13 @@ import pandas as pd
 import numpy as np
 import cv2
 from sklearn.cluster import KMeans
-from webcolors import hex_to_rgb, CSS3_HEX_TO_NAMES
 from transformers import pipeline
-
-
-
-import pandas as pd
-import cv2
 import torch
 import pandas as pd
-import cv2
 import torch
 from fer import FER
-
+from sklearn.cluster import KMeans
+from webcolors import hex_to_rgb, CSS3_HEX_TO_NAMES, rgb_to_hex
 
 
 # Define a function to detect objects using YOLOv5 and recognize facial expressions
@@ -38,12 +32,7 @@ def detect_objects_and_emotions(model,emotion_model,image_path):
     }
 
 
-import os
-import pandas as pd
-import numpy as np
-import cv2
-from sklearn.cluster import KMeans
-from webcolors import hex_to_rgb, CSS3_HEX_TO_NAMES, rgb_to_hex
+
 
 def process_images3(df, image_folder, output_csv):
     # Make sure 'Filename' is the correct column name containing image file names
@@ -295,11 +284,6 @@ def determine_object_count(objects):
 
 
 
-
-
-# Sample DataFrame
-
-
 # Mapping of objects to categories
 object_categories = {
     'person': 'human',
@@ -396,8 +380,6 @@ def map_to_category(objects_str):
 
 
 
-# Assuming your DataFrame is 'filtered_data_11' and 'UTC' is the column with Unix timestamps
-
 # Function to categorize time intervals
 def categorize_time(timestamp):
     hour = timestamp.hour
@@ -442,7 +424,6 @@ def classify_category(text):
     return category_mapping.get(sentiment_label, 'Unknown')
 
 
-# Create a function to normalize 'Upvotes' within each subreddit using min-max scaling
 def normalize_upvotes(group):
     min_upvotes = group['Upvotes'].min()
     max_upvotes = group['Upvotes'].max()
