@@ -41,9 +41,9 @@ To replicate the study, researchers have several options:
 - Start after preprocessing using `comprehensive_reddit_results_analysis.ipynb`.
 
 The following 3 files were added for additional analysis:
-- `file1.csv`
-- `file2.py`
-- `file3.ipynb`
+- `merged_subreddit_data.csv`
+- `aggregated_subreddits_upvotes_sorted_add.csv`
+- `additional_stats_and_graphs.ipynb`
 
 ## Additional Notes
 
