@@ -40,6 +40,11 @@ To replicate the study, researchers have several options:
 - Begin after meme extraction using `metadata_with_features.ipynb`.
 - Start after preprocessing using `comprehensive_reddit_results_analysis.ipynb`.
 
+The following 3 files were added for additional analysis:
+- `file1.csv`
+- `file2.py`
+- `file3.ipynb`
+
 ## Additional Notes
 
 - **Dependencies**: Make sure to install all necessary Python packages by running `pip install -r requirements.txt`.
